@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <title>Wonders of the World</title>
+</head>
+<body>
+  <div class="navbar">
+    <img src="/images/7w_logo.png" class="logo">
+      <a class="dropbtn" href="/html/index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">7 wonders of the Ancient World
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="/html/7wonders.html">Great Pyramid of Giza</a>
+          <a href="/html/7wonders.html">chichén itzá el castillo</a>
+          <a href="/html/7wonders.html">Petra</a>
+          <a href="/html/7wonders.html">Machu Picchu</a>
+          <a href="/html/7wonders.html">Christ the Redeemer</a>
+          <a href="/html/7wonders.html">Colosseum</a>
+          <a href="/html/7wonders.html">Taj Mahal</a>
+        </div>
+      </div>
+        <a href="/html/gallery.html">Gallery</a>
+        <a href="/html//map.html">Map</a>
+    </div>
+    <div class="header">
+        <h2>Wonders of the world</h2>
+      </div>
+      <div class="body">
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>Seven wonders of ancient world</h2>
+            <img src="/images/sevenWonders.jpeg" class="leftcolumnimage"></img>
+            <p>The Seven Wonders of the Ancient World is the oldest known list of this type, documenting the most remarkable man-made creations of classical antiquity; it was based on guidebooks popular among Hellenic sightseers and as such only includes works located around the Mediterranean rim and in the ancient Near East.</p>
+          </div>
+          <div class="card">
+            <h2>Gallery</h2>
+            <div class="slideshow-container">
+
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="/images/new7wonders/chichenitza.jpeg" class="automaticimage">
+                <div class="text"></div>
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="/images/new7wonders/giza.jpeg" class="automaticimage">
+                <div class="text"></div>
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="/images/new7wonders/colosseum.jpeg" class="automaticimage">
+                <div class="text"></div>
+              </div>
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="/images/new7wonders/christ.jpeg" class="automaticimage">
+                <div class="text"></div>
+              </div>
+              
+            </div>
+            <br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+</div>
+            <script>
+              var slideIndex = 0;
+              showSlides();
+              
+              function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 2000); 
+              }
+              </script>
+          </div>
+          <div class="card">
+            <h2>Map</h2>
+            <img src="/images/worldmap.jpeg" class="mapimage">
+            <p>Discover locations of all wonders around the world with one click.</p>
+          </div>
+        </div>
+        <div class="rightcolumn">
+          <div class="card">
+            <h2 class="name" >Amina</h2>
+            <img class="meimage" src="/images/amina.jpeg"></img>
+          </div>
+          <div class="card">
+            <h2>Ilvana</h2>
+            <img class="meimage" src="/images/ilvana.jpeg"></img>
+            
+          </div>
+          <div class="card">
+            <h3>Popular Post</h3>
+            <img src="/images//new7wonders/colosseum.jpeg" class="popularImage"></img>
+            <p>Colosseum</p>
+            <img src="/images//new7wonders/tajmahal.jpeg" class="popularImage"></img>
+            <p>Taj Mahal</p>
+            <img src="/images//new7wonders/giza.jpeg" class="popularImage"></img>
+            <p>Giza</p>
+          </div>
+          <div class="card">
+            <h3>Follow Us</h3>
+            <img class="followicon" src="/images/instagram.png">
+            <img class="followicon" src="/images/twitter.png">
+            <img class="followicon" src="/images/facebook.png">
+            <img class="followicon" src="/images/linkedin.png">
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
