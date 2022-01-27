@@ -1,1 +1,1 @@
-# sevenwonders
+# 7wonders
